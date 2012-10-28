@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Mate Driven Development]]></title>
   <link href="http://dfmonaco.github.com/atom.xml" rel="self"/>
   <link href="http://dfmonaco.github.com/"/>
-  <updated>2012-10-28T07:27:32-03:00</updated>
+  <updated>2012-10-28T10:47:39-03:00</updated>
   <id>http://dfmonaco.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Diego Mónaco]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
