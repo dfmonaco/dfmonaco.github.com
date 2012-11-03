@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | Mate Driven Development]]></title>
   <link href="http://dfmonaco.github.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://dfmonaco.github.com/"/>
-  <updated>2012-11-03T16:17:39-03:00</updated>
+  <updated>2012-11-03T20:17:04-03:00</updated>
   <id>http://dfmonaco.github.com/</id>
   <author>
     <name><![CDATA[Diego Mónaco]]></name>
@@ -29,18 +29,18 @@
 <p><code>bash
 $ sudo apt-get install curl
 $ curl -L https://get.rvm.io | bash -s stable
-</code>
-To complete installation put the following line at the end of <code>.bashrc</code></p>
-
-<p><code>bash
-[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
 </code></p>
 
-<p>Reload <code>.bashrc</code> and test installation, you should see <em>rvm</em> version number.</p>
+<p>To complete installation close the current shell, open a new one and run the following command:</p>
 
 <p><code>bash
-$ source .bashrc
-$ rvm -v
+$ source ~/.rvm/scripts/rvm
+</code></p>
+
+<p>If installation was successfull execute the following command and it should output: <strong><em>rvm is a function</em></strong></p>
+
+<p><code>bash
+$ type rvm | head -n 1
 </code></p>
 
 <h2>Install Ruby 1.9.3</h2>
