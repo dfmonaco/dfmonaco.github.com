@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Rails | Mate Driven Development]]></title>
+  <link href="http://dfmonaco.github.com/blog/categories/rails/atom.xml" rel="self"/>
+  <link href="http://dfmonaco.github.com/"/>
+  <updated>2012-11-03T15:42:28-03:00</updated>
+  <id>http://dfmonaco.github.com/</id>
+  <author>
+    <name><![CDATA[Diego Mónaco]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby and Rails setup in Ubuntu 12.10]]></title>
+    <link href="http://dfmonaco.github.com/blog/2012/11/03/ruby-and-rails-setup-in-ubuntu-12-dot-10/"/>
+    <updated>2012-11-03T12:35:00-03:00</updated>
+    <id>http://dfmonaco.github.com/blog/2012/11/03/ruby-and-rails-setup-in-ubuntu-12-dot-10</id>
+    <content type="html"><![CDATA[<p>Ok so you want to start development in Ubuntu with Ruby/Rails, follow the instructions below and you well be coding in ruby in a few minutes!</p>
+
+<h2>Install RVM</h2>
+
+<p><strong>RVM</strong> stands for <strong><em>Ruby Version Manager</em></strong> and its going to be your best friend when managing ruby versions an gems.</p>
+
+<p>First we are going to install <em>curl</em> and then use it to install <em>rvm</em>:</p>
+
+<p><code>bash
+$ sudo apt-get install curl
+$ curl -L https://get.rvm.io | bash -s stable
+</code>
+To complete installation put the following line at the end of <code>.bashrc</code></p>
+
+<p><code>bash
+[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
+</code></p>
+
+<p>Reload <code>.bashrc</code> and test installation, you should see <em>rvm</em> version number.</p>
+
+<p><code>bash
+$ source .bashrc
+$ rvm -v
+</code></p>
+
+<h2>Install Ruby 1.9.3</h2>
+
+<p>First install required dependencies:</p>
+
+<p><code>bash
+$ sudo apt-get install build-essential openssl libreadline6 libreadline6-dev git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion pkg-config
+</code></p>
+
+<p>And then install <em>ruby</em>:</p>
+
+<p><code>bash
+$ rvm install 1.9.3
+$ rvm --default use 1.9.3
+</code></p>
+
+<h2>Install Rails</h2>
+
+<p>This is the easiest part:</p>
+
+<p><code>bash
+$ gem install rails
+</code></p>
+
+<p>And you are ready to go!</p>
+
+<p>If you get into any trouble, feel free to ask for help in the comments below.</p>
+]]></content>
+  </entry>
+  
+</feed>
