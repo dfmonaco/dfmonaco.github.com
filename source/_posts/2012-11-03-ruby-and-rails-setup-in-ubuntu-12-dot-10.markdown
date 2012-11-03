@@ -17,20 +17,18 @@ First we are going to install _curl_ and then use it to install _rvm_:
 $ sudo apt-get install curl
 $ curl -L https://get.rvm.io | bash -s stable
 ```
-To complete installation put the following line at the end of `.bashrc`
+
+To complete installation close the current shell, open a new one and run the following command:
 
 ```bash
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
+$ source ~/.rvm/scripts/rvm
 ```
 
-Reload `.bashrc` and test installation, you should see _rvm_ version number.
+If installation was successfull execute the following command and it should output: ___rvm is a function___
 
 ```bash
-$ source .bashrc
-$ rvm -v
+$ type rvm | head -n 1
 ```
-
-
 ##  Install Ruby 1.9.3
 
 First install required dependencies:
