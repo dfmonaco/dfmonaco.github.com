@@ -1,0 +1,17 @@
+# Per-application .tmuxrc. This file is loaded by bin/session
+# and should be placed into the app root and named .tmuxrc.
+#
+# vim: syn=tmux
+# source: https://gist.github.com/1886016
+
+neww -n editor
+send-keys -t editor 'vi' C-m
+
+neww -n git
+send-keys -t git 'gs' C-m
+
+neww -n preview
+send-keys -t preview 'rake preview' C-m
+
+selectw -t editor
+
