@@ -7,6 +7,8 @@ categories: [Ruby, Rails, Ubuntu]
 ---
 Ok so you want to start development in Ubuntu with Ruby/Rails, follow the instructions below and you well be coding in ruby in a few minutes!
 
+<!-- More -->
+
 ## Install RVM
 
 __RVM__ stands for ___Ruby Version Manager___ and its going to be your best friend when managing ruby versions an gems.
@@ -18,13 +20,13 @@ $ sudo apt-get install curl
 $ curl -L https://get.rvm.io | bash -s stable
 ```
 
-To complete installation close the current shell, open a new one and run the following command:
+To complete installation add the following line at the end of `.bashrc`:
 
 ```bash
-$ source ~/.rvm/scripts/rvm
+source ~/.rvm/scripts/rvm
 ```
 
-If installation was successfull execute the following command and it should output: ___rvm is a function___
+Close the current shell, open a new one and execute the following command, if installation was successful it should output: ___rvm is a function___
 
 ```bash
 $ type rvm | head -n 1
