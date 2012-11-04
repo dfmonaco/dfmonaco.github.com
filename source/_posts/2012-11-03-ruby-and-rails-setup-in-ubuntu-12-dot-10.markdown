@@ -23,7 +23,7 @@ $ curl -L https://get.rvm.io | bash -s stable
 To complete installation add the following line at the end of `.bashrc`:
 
 ```bash
-source ~/.rvm/scripts/rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 ```
 
 Close the current shell, open a new one and execute the following command, if installation was successful it should output: ___rvm is a function___
