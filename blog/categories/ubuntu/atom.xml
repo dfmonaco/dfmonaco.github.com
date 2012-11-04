@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ubuntu | Mate Driven Development]]></title>
   <link href="http://dfmonaco.github.com/blog/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://dfmonaco.github.com/"/>
-  <updated>2012-11-03T21:33:50-03:00</updated>
+  <updated>2012-11-04T12:33:51-03:00</updated>
   <id>http://dfmonaco.github.com/</id>
   <author>
     <name><![CDATA[Diego Mónaco]]></name>
@@ -37,7 +37,7 @@ $ curl -L https://get.rvm.io | bash -s stable
 <p>To complete installation add the following line at the end of <code>.bashrc</code>:</p>
 
 <p><code>bash
-source ~/.rvm/scripts/rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 </code></p>
 
 <p>Close the current shell, open a new one and execute the following command, if installation was successful it should output: <strong><em>rvm is a function</em></strong></p>
