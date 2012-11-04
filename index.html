@@ -9,7 +9,7 @@
   <meta name="author" content="Diego Mónaco">
 
   
-  <meta name="description" content="Ok so you want to start development in Ubuntu with Ruby/Rails, follow the instructions below and you well be coding in ruby in a few minutes! Install &hellip;">
+  <meta name="description" content="Ok so you want to start development in Ubuntu with Ruby/Rails, follow the instructions below and you well be coding in ruby in a few minutes! ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -97,65 +97,12 @@
 
   <div class="entry-content"><p>Ok so you want to start development in Ubuntu with Ruby/Rails, follow the instructions below and you well be coding in ruby in a few minutes!</p>
 
-<h2>Install RVM</h2>
-
-<p><strong>RVM</strong> stands for <strong><em>Ruby Version Manager</em></strong> and its going to be your best friend when managing ruby versions an gems.</p>
-
-<p>First we are going to install <em>curl</em> and then use it to install <em>rvm</em>:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo apt-get install curl
-</span><span class='line'><span class="nv">$ </span>curl -L https://get.rvm.io | bash -s stable
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>To complete installation close the current shell, open a new one and run the following command:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">source</span> ~/.rvm/scripts/rvm
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>If installation was successfull execute the following command and it should output: <strong><em>rvm is a function</em></strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">type </span>rvm | head -n 1
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>Install Ruby 1.9.3</h2>
-
-<p>First install required dependencies:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo apt-get install build-essential openssl libreadline6 libreadline6-dev git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion pkg-config
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And then install <em>ruby</em>:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rvm install 1.9.3
-</span><span class='line'><span class="nv">$ </span>rvm --default use 1.9.3
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>Install Rails</h2>
-
-<p>This is the easiest part:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>gem install rails
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And you are ready to go!</p>
-
-<p>If you get into any trouble, feel free to ask for help in the comments below.</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/11/03/ruby-and-rails-setup-in-ubuntu-12-dot-10/">Read on &rarr;</a>
+    </footer>
   
 
 

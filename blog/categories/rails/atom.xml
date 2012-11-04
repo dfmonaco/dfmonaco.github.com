@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Rails | Mate Driven Development]]></title>
   <link href="http://dfmonaco.github.com/blog/categories/rails/atom.xml" rel="self"/>
   <link href="http://dfmonaco.github.com/"/>
-  <updated>2012-11-03T20:17:04-03:00</updated>
+  <updated>2012-11-03T21:33:50-03:00</updated>
   <id>http://dfmonaco.github.com/</id>
   <author>
     <name><![CDATA[Diego Mónaco]]></name>
@@ -20,6 +20,9 @@
     <id>http://dfmonaco.github.com/blog/2012/11/03/ruby-and-rails-setup-in-ubuntu-12-dot-10</id>
     <content type="html"><![CDATA[<p>Ok so you want to start development in Ubuntu with Ruby/Rails, follow the instructions below and you well be coding in ruby in a few minutes!</p>
 
+<!-- More -->
+
+
 <h2>Install RVM</h2>
 
 <p><strong>RVM</strong> stands for <strong><em>Ruby Version Manager</em></strong> and its going to be your best friend when managing ruby versions an gems.</p>
@@ -31,13 +34,13 @@ $ sudo apt-get install curl
 $ curl -L https://get.rvm.io | bash -s stable
 </code></p>
 
-<p>To complete installation close the current shell, open a new one and run the following command:</p>
+<p>To complete installation add the following line at the end of <code>.bashrc</code>:</p>
 
 <p><code>bash
-$ source ~/.rvm/scripts/rvm
+source ~/.rvm/scripts/rvm
 </code></p>
 
-<p>If installation was successfull execute the following command and it should output: <strong><em>rvm is a function</em></strong></p>
+<p>Close the current shell, open a new one and execute the following command, if installation was successful it should output: <strong><em>rvm is a function</em></strong></p>
 
 <p><code>bash
 $ type rvm | head -n 1
