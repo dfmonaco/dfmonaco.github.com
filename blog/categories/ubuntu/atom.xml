@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ubuntu | Mate Driven Development]]></title>
   <link href="http://dfmonaco.github.com/blog/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://dfmonaco.github.com/"/>
-  <updated>2012-11-04T12:33:51-03:00</updated>
+  <updated>2012-12-05T14:19:24-03:00</updated>
   <id>http://dfmonaco.github.com/</id>
   <author>
     <name><![CDATA[Diego Mónaco]]></name>
@@ -12,6 +12,86 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Installing Rails Edge (4.0.0.beta) in Ubuntu 12.10]]></title>
+    <link href="http://dfmonaco.github.com/blog/2012/12/05/installing-rails-edge-in-ubuntu-12-dot-10/"/>
+    <updated>2012-12-05T12:46:00-03:00</updated>
+    <id>http://dfmonaco.github.com/blog/2012/12/05/installing-rails-edge-in-ubuntu-12-dot-10</id>
+    <content type="html"><![CDATA[<p>These are the steps I had to follow to get Rails Edge (4.0.0.beta at the moment of writing) in my Ubuntu 12.10 box.</p>
+
+<!-- More -->
+
+
+<h2>Create a new gemset</h2>
+
+<p><code>bash
+$ mkdir rails_edge &amp;&amp; cd rails_edge
+/rails_edge$ echo 'rvm gemset use rails_edge --create' &gt; .rvmrc
+/rails_edge$ cd .. &amp;&amp; cd rails_edge
+</code>
+At this point <strong>rvm</strong> is going to ask you if you trust the <code>.rvmrc</code> file, just say <strong><em>yes</em></strong></p>
+
+<h2>Clone Rails</h2>
+
+<p><code>bash
+/rails_edge$ git clone https://github.com/rails/rails.git
+</code></p>
+
+<h2>Install required gems</h2>
+
+<p><code>bash
+/rails_edge$ gem install i18n thor
+</code></p>
+
+<h2>Create a dummy Rails app</h2>
+
+<p><code>bash
+ /rails_edge$ ruby rails/railties/bin/rails new dummy_app --edge --skip-bundle &amp;&amp; rm -rf rails/
+</code></p>
+
+<h2>Extract the generated Gemfile</h2>
+
+<p><code>bash
+ /rails_edge$ mv dummy_app/Gemfile . &amp;&amp; rm -rf dummy_app/
+</code></p>
+
+<h2>Install Rails Edge</h2>
+
+<p><code>bash
+ /rails_edge$ bundle install --binstubs
+ /rails_edge$ rails -v
+ Rails 4.0.0.beta
+</code></p>
+
+<h2>Install a JavaScript runtime:</h2>
+
+<p>In this case we are going to install <strong>node.js</strong></p>
+
+<p><code>bash
+/rails_edge$ sudo apt-get install python-software-properties
+/rails_edge$ sudo add-apt-repository ppa:chris-lea/node.js
+/rails_edge$ sudo apt-get update
+/rails_edge$ sudo apt-get install nodejs npm
+</code></p>
+
+<h2>Create a Rails Edge app</h2>
+
+<p><code>bash
+ /rails_edge$ rails new rails_4_app --edge --skip-bundle &amp;&amp; cd rails_4_app/
+ /rails_edge/rails_4_app$ bundle install --binstubs
+ /rails_edge/rails_4_app$ rails s
+=&gt; Booting WEBrick
+=&gt; Rails 4.0.0.beta application starting in development on http://0.0.0.0:3000
+=&gt; Call with -d to detach
+=&gt; Ctrl-C to shutdown server
+[2012-12-05 13:58:18] INFO  WEBrick 1.3.1
+[2012-12-05 13:58:18] INFO  ruby 1.9.3 (2012-11-10) [i686-linux]
+[2012-12-05 13:58:18] INFO  WEBrick::HTTPServer#start: pid=32414 port=3000
+</code>
+And you should be <strong>Riding Rails 4.0.0.beta</strong> by now.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ruby and Rails setup in Ubuntu 12.10]]></title>
