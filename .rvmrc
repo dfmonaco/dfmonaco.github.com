@@ -1,1 +1,1 @@
-rvm use `cat .gemset`
+rvm use `cat .gemset` --create
