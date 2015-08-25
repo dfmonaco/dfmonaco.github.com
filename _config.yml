@@ -4,10 +4,10 @@
 
 url: http://dfmonaco.github.com
 title: Mate Driven Development
-subtitle: 'Web Dev over open technologies: GNU/Linux, Ruby, Rails, Coffescript, HTML5, CSS3'
+subtitle: 'Web Dev over open technologies'
 author: Diego Mónaco
 simple_search: http://google.com/search
-description: 'Web Dev over open technologies: GNU/Linux, Ruby, Rails, Coffescript, HTML5, CSS3'
+description: 'Web Dev over open technologies'
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
